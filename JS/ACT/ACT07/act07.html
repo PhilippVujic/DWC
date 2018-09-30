@@ -2,23 +2,66 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Act01</title>
+	<title>Act07</title>
 	<script>
-		var sidelength = prompt("Enter the sidelength of the square:", "");
-		var perimetre = sidelength*4;
-		document.write("The sidelength of the square is ", perimetre, "<br><br>");
-		
-		var n1 = prompt("Enter 4 numbers to get the addition and the product: (1/4)", );
-		var n2 = prompt("Enter 4 numbers to get the addition and the product: (2/4)", );
-		var n3 = prompt("Enter 4 numbers to get the addition and the product: (3/4)", );
-		var n4 = prompt("Enter 4 numbers to get the addition and the product: (4/4)", );
+		let number1 = prompt("Enter first number"), number2 = prompt("Enter second number"), number3 = prompt("Enter third number");
+		let smallestNumber, biggestNumber;
 
-		var sum = parseInt(n1)+parseInt(n2)+parseInt(n3)+parseInt(n4);
-		var product = n1*n2*n3*n4;
-		document.write("Addition: ", sum, "<br>product: " + product);
+
+		if (number1 > number2 || number1 > number3){
+			if (number1 > number3){
+				biggestNumber = number1; 
+			}
+		} else if (number2 > number3) {
+			biggestNumber = number2;
+		} else {
+			biggestNumber = number3;
+		}
+
+		if (number1 < number2 || number1 < number3){
+			if (number1 < number3){
+				smallestNumber = number1; 
+			}
+		} else if (number2 < number3) {
+			smallestNumber = number2;
+		} else {
+			smallestNumber = number3;
+		}
+
+		document.write("Biggest Number: ", biggestNumber);
+		document.write("<br>Smallest Number: ", smallestNumber);
+
+		let number999 = prompt("Enter a number between 0 and 999");
+		let digits;
+
+		if (number999 >= 0 && number999 <= 999 ) {
+			if (number999 > 10) {
+				if (number999 > 100 ) {
+					digits = 3;
+				} else {
+					digits = 2;
+				}
+			} else {
+				digits = 1;
+			}
+		} else {
+			digits = null;
+		}
+
+		document.write("<br>Your number has " + digits + " digits!<br>");
+
+		let numberType = prompt("Your last number please");
+
+		if (numberType < 0) {
+			document.write("Negative number");
+		} else if (numberType > 0) {
+			document.write("Positive number");
+		} else if (numberType == 0) {
+			document.write("Zero number");
+		}
 	</script>
 </head>
 <body>
-		
+
 </body>
 </html>

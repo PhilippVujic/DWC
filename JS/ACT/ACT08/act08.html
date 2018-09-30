@@ -2,23 +2,51 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Act01</title>
+	<title>Act08</title>
 	<script>
-		var sidelength = prompt("Enter the sidelength of the square:", "");
-		var perimetre = sidelength*4;
-		document.write("The sidelength of the square is ", perimetre, "<br><br>");
-		
-		var n1 = prompt("Enter 4 numbers to get the addition and the product: (1/4)", );
-		var n2 = prompt("Enter 4 numbers to get the addition and the product: (2/4)", );
-		var n3 = prompt("Enter 4 numbers to get the addition and the product: (3/4)", );
-		var n4 = prompt("Enter 4 numbers to get the addition and the product: (4/4)", );
+		let dd = prompt("Enter a day (dd)");
+		let mm = prompt("Enter a month (mm)");
+		let yyyy = prompt("Enter a year (yyyy)");
 
-		var sum = parseInt(n1)+parseInt(n2)+parseInt(n3)+parseInt(n4);
-		var product = n1*n2*n3*n4;
-		document.write("Addition: ", sum, "<br>product: " + product);
+		if (dd == 25 && mm == 12 && yyyy == 2018) {
+			document.write("Happy Hanukkah, today is Christmas<br>");
+		}
+
+		let number1 = prompt("Enter first number"), number2 = prompt("Enter second number"), number3 = prompt("Enter third number");
+
+		if (number1 < 10 && number2 < 10 && number3 < 10){
+			document.write("All the numbers are less than 10<br>");
+		}
+
+		let x = prompt("Enter coordinate x"), y = prompt("Enter coordinate y");
+
+		if (x > 0 && y > 0) {
+			document.write("First Quadrant");
+		} else if (x < 0 && y > 0) {
+			document.write("Second Quadrant");
+		} else if (x < 0 && y < 0) {
+			document.write("Third Quadrant");
+		} else if (x > 0 && y < 0) {
+			document.write("Fourth Quadrant");
+		}
+
+		let salary = prompt("Enter your salary"), years = prompt("Enter how many years you work");
+		if (salary < 500 && years > 10) {
+			document.write("<br>Your increment of your salary is to " + parseInt(salary) * 1.20);
+		} else if (salary < 500 && years < 10) {
+			document.write("<br>Your increment of your salary is to " + parseInt(salary) * 1.05);
+		} else {
+			document.write("<br>No salary increment");
+		}
+
+		let number4 = prompt("Enter first number"), number5 = prompt("Enter second number"), number6 = prompt("Enter third number");
+
+		if (number4 < 10 || number5 < 10 || number6 < 10){
+			document.write("<br>Some numbers are less than 10<br>");
+		}
 	</script>
 </head>
 <body>
-		
+
 </body>
 </html>

@@ -2,23 +2,41 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Act01</title>
+	<title>Act06</title>
 	<script>
-		var sidelength = prompt("Enter the sidelength of the square:", "");
-		var perimetre = sidelength*4;
-		document.write("The sidelength of the square is ", perimetre, "<br><br>");
-		
-		var n1 = prompt("Enter 4 numbers to get the addition and the product: (1/4)", );
-		var n2 = prompt("Enter 4 numbers to get the addition and the product: (2/4)", );
-		var n3 = prompt("Enter 4 numbers to get the addition and the product: (3/4)", );
-		var n4 = prompt("Enter 4 numbers to get the addition and the product: (4/4)", );
+		let firstNumber = prompt("Enter the first number");
+		let secondNumber = prompt("Enter the second number");
 
-		var sum = parseInt(n1)+parseInt(n2)+parseInt(n3)+parseInt(n4);
-		var product = n1*n2*n3*n4;
-		document.write("Addition: ", sum, "<br>product: " + product);
+		if(firstNumber > secondNumber) {
+			document.write(parseInt(firstNumber) + parseInt(secondNumber));
+		} else {
+			document.write(parseInt(firstNumber) - parseInt(secondNumber));
+		}
+
+		let grade1 = prompt("Your grade1: ");
+		let grade2 = prompt("Your grade2: ");
+		let grade3 = prompt("Your grade3: ");
+
+		if ((parseInt(grade1) + parseInt(grade2) + parseInt(grade3)) / 3 >= 5) {
+			document.write("<br>You Pass");
+		} else {
+			document.write("<br>You Fail");
+		}
+
+		if (parseInt(prompt("Enter a number")) % 2 == 0) {
+			document.write("<br>Pair Number!");
+		} else {
+			document.write("<br>Odd number!");
+		}
+
+		let age = prompt("Enter your age");
+		if (age >= 18 || age < 65) {
+			document.write("<br>You are in working age.");
+		} else {"<br>Not working age."}
+
 	</script>
 </head>
 <body>
-		
+
 </body>
 </html>

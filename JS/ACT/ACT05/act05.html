@@ -4,19 +4,32 @@
 	<meta charset="UTF-8">
 	<title>Act05</title>
 	<script>
-		var name = prompt("Your Name: ", "");
-		var grade1 = prompt("Your grade1: ", "");
-		var grade2 = prompt("Your grade2: ", "");
-		var grade3 = prompt("Your grade3: ", "");
+		let name = prompt("Your Name: ");
+		let grade1 = prompt("Your grade1: ");
+		let grade2 = prompt("Your grade2: ");
+		let grade3 = prompt("Your grade3: ");
 
 		if ((parseInt(grade1) + parseInt(grade2) + parseInt(grade3)) / 3 >= 5) {
-		document.write("Congratulations! You pass the exam");
+			document.write("Congratulations! You pass the exam");
 		} else {
-		document.write("You Failed");
+			document.write("You Failed");
+		}
+
+		if (prompt("Your first email please") != prompt("Your second email please")) {
+			document.write("<br>Emails are not equal");
+		}
+
+		let age = prompt("Enter your age");
+		if (age >= 18 || age < 65) {
+			document.write("<br>You are in working age.");
+		}
+
+		if (parseInt(prompt("Enter a number")) % 2 == 0) {
+			document.write("<br>Pair Number!");
 		}
 	</script>
 </head>
 <body>
-		
+	
 </body>
 </html>
