@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Act9</title>
+	<script>
+		word = prompt("Select one word to translate it (house, table, dog, cat)");
+		month = parseInt(prompt("Select a month from 1 - 12"));
+		daysOfMonth = parseInt(prompt("Enter a number of a month 1-12"));
+		letter = prompt("Type a letter to see if it's a consonant or not");
+
+		switch (word) {
+			case 'house':
+				document.write("casa");
+				break;
+
+			case 'table':
+				document.write("taula");
+				break;
+
+			case 'dog':
+				document.write("ca");
+				break;
+
+			case 'cat':
+				document.write("moix");
+				break;
+		}
+		document.write("</br>");
+
+		switch (month) {
+			case 1:
+				document.write("January");
+				break;
+
+			case 2:
+				document.write("February");
+				break;
+
+			case 3:
+				document.write("March");
+				break;
+
+			case 4:
+				document.write("April");
+				break;
+
+			case 5:
+				document.write("May");
+				break;
+
+			case 6:
+				document.write("June");
+				break;
+
+			case 7:
+				document.write("July");
+				break;
+
+			case 8:
+				document.write("August");
+				break;
+
+			case 9:
+				document.write("September");
+				break;
+
+			case 10:
+				document.write("October");
+				break;
+
+			case 11:
+				document.write("November");
+				break;
+
+			case 12:
+				document.write("December");
+				break;
+
+		}
+
+		document.write("</br>");
+
+		switch (daysOfMonth) {
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+				document.write("31");
+				break;
+
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+				document.write("30");
+				break;
+
+			case 2:
+				document.write("28");
+				break;
+		}
+
+		document.write("</br>");
+
+
+		if (isNaN(letter)){
+			switch (letter) {
+				case "a":
+				case "e":
+				case "i":
+				case "o":
+				case "u":
+					document.write("Vowel");
+					break;
+				default:
+					document.write("Consonant");
+			}
+		}
+
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>
