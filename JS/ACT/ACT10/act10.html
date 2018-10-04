@@ -8,22 +8,123 @@
 		let x = 0;
 		let y = 50;
 		let z = -50;
+		let pairNumber = 0;
+		let sevenmult = 7;
+		let studenmark = 0; 
+		let under5 = 0;
+		let over5 = 0;
+		let heights = 0;
+		let heightscount = 0;
+		let salarycount = 0;
+		let salarybetween = 0;
+		let salaryover = 0;
+		let list1 = [1,2,3];
+		let list2 = [99,2,1];
+		let v = 0;
+		let list1sum = 0; 
+		let list2sum = 0;
+		let oddnumber = 0;
+		let pairnumber = 0;
+		let pairoddcount = 0;
+
+		function br(){
+			document.write("</br></br>");
+		}
 
 		while (x != 50) {
 			document.write(++x, " ");
 		}
 
-		document.write("</br></br>");
+		br();
 
 		while (y != 0) {
 			document.write(y--, " ");
 		}
 
-		document.write("</br></br>");
+		br();
 
 		while (z <= 0) {
 			document.write(z++, " ");
 		}
+
+		br();
+
+		while (pairNumber <= 100) {
+			document.write(pairNumber, " ");
+			pairNumber += 2;
+		}
+
+		br();
+
+		while (sevenmult <= 70) {
+			document.write(sevenmult, " ");
+			sevenmult += 7;
+		}
+
+		br();
+
+		while (studenmark != 10) {
+			if (prompt("Type a student mark") < 5) {
+				under5++;
+			} else {
+				over5++;
+			}
+			studenmark++;
+		}
+
+		if (studenmark == 10 ) {
+			document.write("Failed: ", under5, " Passed: ", over5);
+		}
+
+		br();
+
+		while (heightscount != 5) {
+			heights += parseInt(prompt("Type in 5 heights"));
+			heightscount++;
+		}
+		document.write("The average height is: ", heights / 5);
+
+		br();
+
+		while (salarycount != 5) {
+			let salary = parseInt(prompt("Type in 5 salarys"));
+			if (salary > 500 && salary < 1000) {
+				salarybetween++;
+			} else if (salary > 1000){
+				salaryover++;
+			}
+			salarycount++;
+		}
+
+
+		document.write("Between 500 and 1000: ", salaryover, " Over 1000: ", salaryover);
+
+		br();
+
+		while(v <= list1.length){
+			list1sum += list1[v];
+			list2sum += list2[v];
+			v++;
+		}
+		if (list1sum > list2sum) {
+			document.write("list1 is bigger")
+		} else {
+			document.write("list2 is bigger")
+		}
+
+		br();
+
+		while (pairoddcount != 5) {
+			if (prompt("Type in a number") % 2 == 0) {
+				pairnumber++;
+			} else {
+				oddnumber++;
+			}
+			pairoddcount++;
+		}
+
+		document.write("Pair: ", pairnumber, " oddnumber: ", oddnumber);
+
 
 	</script>
 </head>

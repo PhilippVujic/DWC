@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Act11</title>
+	<script>
+		let zero = 0;
+		let positive = 0;
+		let negative = 0;
+		let temp = 0;
+		let people = []; 
+		let youngest = 0;
+		let oldestname = "";
+		let male = 0;
+		let female = 0;
+		let oldest = 0;
+		let overmaleage = 0;
+		let id = 0; 
+		do {
+			temp = parseInt(prompt("Type a number"));
+			if (temp == 0) {
+				zero += temp;
+			} else if (temp > 0) {
+				positive += temp;
+			} else if (temp < 0){
+				negative += temp;
+			}
+		} while (temp != 9999);
+
+		document.write("positive: ", positive, "<br>negative: ", negative, "<br>zero: ", zero);
+
+		do{
+			id = parseInt(prompt("Enter your id: "));
+			let name = prompt("Enter your name: ");
+			let gender = prompt("Enter your gender male or female:");
+			let age = parseInt(prompt("Enter your age: "));
+			people.push({id:id, name:name, gender:gender, age:age});		
+		} while (id != 0);
+
+		for (var i = 0; i < people.length; i++) {
+			let person = people[i];
+			if (person.gender == "male") {
+				male++;
+				if (person.age > 18 && person.age < 65) {
+					overmaleage++;
+				}
+				if (youngest > person.age) {
+					youngest = person.age;
+				}
+			} else {
+				female++;
+				if (person.age > oldest){
+					oldest = person.age;
+					oldestname = person.name;
+				}
+			}
+		}
+
+
+		document.write("</br>Total: ", people.length);
+		document.write("</br>Male: ", male);
+		document.write("</br>Female: ", female);
+		document.write("</br>Male between 18 and 65: ", overmaleage);
+		document.write("</br>Name oldest woman: ", oldestname);
+		document.write("</br>ID youngest male: ", youngest);
+
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>
