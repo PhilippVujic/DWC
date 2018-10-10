@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Act18</title>
+	<script>
+		let names = [];
+
+		function palindromo(){
+			let word = prompt("Insert word")
+			for (var i = 0; i < word.length; i++) {
+				if (word[i] != word[word.length-i-1]) {
+					return false;
+				} 
+			}
+			return true;
+		}
+
+		function email(){
+			if (prompt("Enter a email").indexOf("@") != -1){
+				return true;
+			}
+			return false;
+		}
+
+		function searchString(){
+			let stringsearch = prompt("Insert a text");
+			let word = prompt("Word to search for");
+			let pos = stringsearch.indexOf(word);
+
+			if (pos != -1) {
+				document.write("The word is located at index " + pos);
+			} else {
+				document.write("Word not found");
+			}
+		}
+
+		function namecounter() {
+			let namecounter = 0;
+
+			while(true){
+				let nameprompt = prompt("Write a name");
+				if (nameprompt == "end") {
+					return namecounter;
+				}
+
+				for (var i = 0; i < names.length; i++) {
+					if (names[i] == nameprompt){
+						continue;
+					}
+				}
+				namecounter++;
+			}
+		}
+
+		document.write("Names counted " + namecounter() + "</br>");
+		document.write(searchString() + "</br>");
+		document.write("Es un palindromo? " + palindromo() + "</br>");
+		document.write("Is @ in the text? " + email());
+
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

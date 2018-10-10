@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Act16</title>
+	<script>
+		let array = new Array(8);
+		for (var i = 0; i < array.length; i++) {
+			array[i] = prompt("Introduce a number (8 in total)");
+		}
+
+		function Addition(){
+			let addition = 0;
+			for (var i = 0; i < array.length; i++) {
+				addition += parseInt(array[i]);
+			}
+			return addition;
+		}
+
+		function Average(){
+			let addition = 0;
+			for (var i = 0; i < array.length; i++) {
+				addition += parseInt(array[i]);
+			}
+			return addition / array.length;
+		}
+
+		function Sum5(){
+			let addition = 0;
+			for (var i = 0; i < array.length; i++) {
+				if (array[i] > 5) {
+					addition += parseInt(array[i]);
+				}
+			}
+			return addition;
+		}
+
+		function Sum5Count(){
+			let addition = 0;
+			for (var i = 0; i < array.length; i++) {
+				addition++;
+			}
+			return addition;
+		}
+
+		document.write("Sum: " + Addition() + "</br>");
+		document.write("Average: " + Average() + "</br>");
+		document.write("Sum5: " + Sum5() + "</br>");
+		document.write("Sum5Count: " + Sum5Count() + "</br>");
+
+	</script>
+</head>
+
+<body>
+
+</body>
+
+</html>

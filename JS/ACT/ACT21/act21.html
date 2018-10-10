@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Act21</title>
+	<script>
+		function checkPw(){
+			if (document.getElementById('pass').value == document.getElementById('passconfirm').value){
+				alert("PASSWORD MATCH");
+			} else {
+				alert("PASSWORD DON'T MATCH");
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<p>Enter a password: <input type="password" id="pass"></p><br/>
+	<p>Confirm password: <input type="password" id="passconfirm"></p><br/>
+	<input type="button" value="Submit" onclick="checkPw()"><br/>
+
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-var array = ["Platano", "Manzana"];
+let array = ["Platano", "Manzana"];
 
 showProducts();
 
