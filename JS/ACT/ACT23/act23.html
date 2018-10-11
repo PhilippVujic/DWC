@@ -5,19 +5,31 @@
 	<meta charset="UTF-8">
 	<title>Act23</title>
 	<script>
-		
+		function selected() {
+			let txt = "";
+			if (document.getElementById("checkbox1").checked) {
+				txt += document.getElementById("checkbox1").value + "\n";
+			}
+			if (document.getElementById("checkbox2").checked) {
+				txt +=document.getElementById("checkbox2").value + "\n";
+			}
+			if (document.getElementById("checkbox3").checked) {
+				txt +=document.getElementById("checkbox3").value;
+			}
+			alert(txt);
+		}
 	</script>
 </head>
 
 <body>
 	<form>
-		<input type="checkbox" value="football" id="checkbox1">Football
+		<input type="checkbox" name="sport" value="football" id="checkbox1">Football
 		<br>
-		<input type="checkbox" value="tennis" id="checkbox2">Tennis
+		<input type="checkbox" name="sport" value="tennis" id="checkbox2">Tennis
 		<br>
-		<input type="checkbox" value="karate" id="checkbox3">Karate
+		<input type="checkbox" name="sport" value="karate" id="checkbox3">Karate
 
-		<input type="button" value="Count" onClick="countSelected()">
+		<input type="button" value="See selected sports!" onClick="selected()">
 	</form>
 </body>
 

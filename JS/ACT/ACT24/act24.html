@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Act24</title>
+	<script>
+		function selected() {
+			let txt = "";
+			if (document.getElementById("radio1").checked) {
+				txt = "You are allowed to enter the site!";
+			}
+			if (document.getElementById("radio2").checked) {
+				txt = "ACCESS DENIED!";
+			}
+			alert(txt);
+		}
+	</script>
+</head>
+
+<body>
+	<form>
+		<input type="radio" name="sport" id="radio1" onClick="selected()">Older than 18!
+		<br>
+		<input type="radio" name="sport" id="radio2" onClick="selected()">Younger than 18!
+	</form>
+</body>
+
+</html>

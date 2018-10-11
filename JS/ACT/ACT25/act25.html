@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Act24</title>
+	<script>
+		function submitButton(){
+			var username = document.getElementById("username").value;
+			var email = document.getElementById("email").value;
+			var message = document.getElementById("message").value;
+
+			alert("Username: " + username + "\nEmail: " + email + "\nMessage: " + message)
+		}
+	</script>
+</head>
+
+<body>
+	<form>
+		Username: <input type="text" name="username" id="username"><br>
+		Email: <input type="email" name="email" id="email"><br>
+		Message: <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+		<input type="submit" value="Submit Message!" onclick="submitButton()">
+	</form>
+</body>
+
+</html>
