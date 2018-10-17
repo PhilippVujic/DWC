@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Act26</title>
+	<script>
+		function empty(placeholder){
+			placeholder.value='';
+		}
+
+		function checkEntry(numberinput){
+			console.log(numberinput);
+			if (numberinput.length < 7 || numberinput.length > 20) {
+				alert('You must enter data!');
+				console.log("Yey2");
+
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<form>
+		Username: <input type="text" name="username" onBlur="checkEntry(this.value)" id="username"><br>
+		Password: <input type="password" name="pw" onBlur="checkEntry(this.value)" id="pw"><br>  
+	</form>
+</body>
+
+</html>
