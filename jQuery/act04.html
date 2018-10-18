@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Act03</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+	<table>
+		<ul>
+			<li id="list1">Potato</li>
+			<li id="list2">Carrot</li>
+			<li id="list3">Macarroni</li>
+			<li id="list4">Egg</li>
+		</ul>
+	</table>
+	<script>
+		$(function () {
+			$("li").click(function () {
+				$(this).hide();
+			});
+		})
+
+	</script>
+</body>
+
+</html>
