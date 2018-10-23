@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Act05</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<style>
+
+</style>
+</head>
+
+<body> 
+	<h1>Header 1</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti repellat harum eos ipsa molestiae tempora animi, necessitatibus vitae cupiditate culpa.</p>
+	
+	<h1>Header 2</h1>
+	<p>ipsum dolor</p>
+
+	<h1>Header 3</h1>
+	<p>onsectetur adipisicing elit. Corrupti re</p>
+
+	<h1>Header 4</h1>
+	<p>harum eos ipsa molestiae tempora animi, necessitatibus vitae cupiditate cu</p>
+
+	<h1>Header 5</h1>
+	<p>r sit amet, consectetur adipisic</p>
+	
+	<button id="small">Small</button>
+	<button id="med">Medium</button>
+	<button id="big">Big</button>
+
+	<script>
+		$(function() {
+			$("button#small").click(function() {
+				$("p:odd").css("font-size", "10px");
+			});
+
+			$("button#med").click(function() {
+				$("p:odd").css("font-size", "15px");
+			});
+
+			$("button#big").click(function() {
+				$("p:odd").css("font-size", "20px");
+			});
+		});
+	</script>
+</body>
+
+</html>

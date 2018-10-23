@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Act08</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<style>
+	.style1 { 
+		background-color:#ffffcc; 
+		font-family:verdana; 
+		font-size:14px; 
+		border-top-width:1px; 
+		border-right-width:3px; 
+		border-bottom-width:3px; 
+		border-left-width:1px; 
+		border-top-style:dotted; 
+		border-right-style:solid; 
+		border-bottom-style:solid; 
+		border-left-style:dotted; 
+		border-top-color:#ffaa00; 
+		border-right-color:#ff0000; 
+		border-bottom-color:#ff0000; 
+		border-left-color:#ffaa00; 
+	} 
+
+</style>
+</head> 
+
+<body> 
+	<table>
+		<thead>
+			<tr>
+				<th>Month</th>
+				<th>Savings</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>January</td>
+				<td>$100</td>
+			</tr>
+			<tr>
+				<td>February</td>
+				<td>$80</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<button id="linkclass">Link Style</button>
+	<button id="unlinkclass">Unlike Style</button>
+
+	<script>
+		$(function(){
+			$("#linkclass").click(function(){
+				$("td").addClass("style1");
+			});
+            $("#unlinkclass").click(function(){
+                $("td").removeClass("style1");
+            });
+        });
+    </script>
+</body>
+
+</html>

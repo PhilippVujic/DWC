@@ -4,27 +4,52 @@
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Act03</title>
+	<title>Act04</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-3.3.1.min.js">
+	</script>
+	<style> 	
+	table, td {
+		border: 1px solid black;
+	}
+</style>
 </head>
 
 <body>
-	<table>
+	<table id="table1">
 		<ul>
-			<li id="list1">Potato</li>
-			<li id="list2">Carrot</li>
-			<li id="list3">Macarroni</li>
-			<li id="list4">Egg</li>
+			<tr id="tr1">
+				<td>TABLE ROW 1</td>
+			</tr>
+			<tr id="tr2">
+				<td>TABLE ROW 2</td>
+			</tr>
+			<tr id="tr3">
+				<td>TABLE ROW 3</td>
+			</tr>
 		</ul>
+	</table>
+
+	<table id="table2">
+		<tr id="tr4">
+			<td>TABLE ROW 1</td>
+		</tr>
+		<tr id="tr5">
+			<td>TABLE ROW 2</td>
+		</tr>
+		<tr id="tr6">
+			<td>TABLE ROW 3</td>
+		</tr>
 	</table>
 	<script>
 		$(function () {
-			$("li").click(function () {
-				$(this).hide();
+			$("#table1 tr").click(function() {
+				$(this).css("background-color", "red");
 			});
-		})
-
+			$("#table2 tr").click(function() {
+				$(this).css("font-size", "+=2px");
+			});
+		});
 	</script>
 </body>
 
