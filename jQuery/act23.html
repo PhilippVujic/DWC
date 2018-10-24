@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Act23</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<style>  
+	#div2{
+		display: none;
+	}
+</style>
+</head> 
+
+<body>  
+	<a href="google.es"></a>
+	<a href="google.com"></a>
+	<a href="facebook.com"></a>
+	<a href="fb.es"></a>
+	<a href="twitter.de"></a>
+	<script>
+		$(function() {
+			$("a").each(function(){
+				var actual = $(this).attr("href");
+				$(this).text(actual);
+				if(actual.indexOf(".es") !== -1) {
+					$(this).css("background-color","#ff0");
+				};
+			});
+		});
+	</script>
+</body>
+
+</html>

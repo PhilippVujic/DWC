@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Act14</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<style>
+
+</style>
+</head> 
+
+<body>  
+	<button>Green</button>
+	<button>Red</button>
+	<script>
+		$(function(){
+			$("button").mousedown(leftclick);
+			$("button").mouseup(leftclickoff);
+
+			function leftclick(){
+				$("body").css("background-color", $(this).text());
+			};
+			function leftclickoff(){
+				$("body").css("background-color", "#fff");
+			};
+		});
+	</script>
+</body>
+
+</html>

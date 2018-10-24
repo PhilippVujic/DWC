@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Act11</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<style>
+
+</style>
+</head> 
+
+<body>  
+	<table>
+		<tr>
+			<li style="background-color: green;">Achy</li>
+			<li style="background-color: yellow;">Breaky</li>
+		</tr>
+		<tr>
+			<li style="background-color: blue;">Heart</li>
+			<li style="background-color: orange;">Live</li>
+		</tr>
+	</table>
+	<script>
+		$(function(){
+			var bgcolordefault;
+
+			$("li").mouseover(function(){
+				bgcolordefault = $(this).css("background-color");
+				$(this).css("background-color", "cyan");
+			});
+
+			$("li").mouseout(function(){
+				$(this).css("background-color", bgcolordefault);
+			});
+		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Act20</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<style>  
+	#div2{
+		display: none;
+	}
+</style>
+</head> 
+
+<body>  
+	<div id="div1">
+		<p>Expedita alias consequuntur vel maiores voluptates sed porro odit esse vitae odio.</p>
+		<p> Nemo nulla culpa eos nostrum ipsum illo delectus rerum magnam, unde assumenda.</p>
+		<p>. Maxime consectetur, accusamus mollitia nesciunt qui aliquid repellendus dolorum totam commodi saepe.</p>
+	</div>
+
+	<div id="div2">
+		<p> Laboriosam architecto corporis magni ipsum, in ea, quisquam explicabo aliquam debitis molestiae!</p>
+		<p> A eum quae qui aut facere nemo necessitatibus excepturi ut, quia officiis.</p>
+		<p>Earum laudantium pariatur accusantium ipsam omnis similique in magnam quas ipsa deleniti.</p>
+	</div>
+	<script>
+		$(function() {
+			$("#div1 p").click(function(){
+				$(this).parent().fadeOut("slow");
+				$("#div2").fadeIn("slow");
+			});
+			$("#div2 p").click(function(){
+				$(this).parent().fadeOut("slow");
+				$("#div1").fadeIn("slow");
+			});
+		});
+	</script>
+</body>
+
+</html>
