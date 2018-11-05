@@ -1,4 +1,3 @@
-
 var books = new Array(4);
 for (let index = 0; index < books.length; index++) {
     books[index] = new Array(4);
@@ -35,13 +34,13 @@ function printTable() {
 
 function countBooks() {
     var numcount = 0;
-    tc = $("#col").val();
-    tr = $("#row").val();
 
     for (x = 0; x < books.length; x++) {
         for (let n = 0; n < books[x].length; n++) {
-            if (books[tc][tr] != undefined) {
-                numcount++;
+            if (typeof books[x][n] != 'undefined') {
+                if (books[x][n].title.length > 0) {
+                    numcount++;
+                }
             }
         }
         $("#printer").html("<p>" + numcount + "</p>");
@@ -100,6 +99,3 @@ class Book {
         this.row = row;
     };
 };
-
-
-
