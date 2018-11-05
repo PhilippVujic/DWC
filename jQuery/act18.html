@@ -21,14 +21,13 @@
 	<script>
 		$(function() {
 			$("#addButton").click(function(){
-				$("ul").append("<li>"+ $("input").val() + "<button id='itemremove'>Remove</button></li>");
+				$("ul").append("<li>"+ $("input").val() + "<button class='itemremove'>Remove</button></li>");
 			});
 
-			$(document).on('click', '#itemremove', function(){
+			$(document).on('click', '.itemremove', function(){
 				$(this).parent().remove();
 			});
 		});
 	</script>
 </body>
-
 </html>
