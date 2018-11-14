@@ -1,6 +1,6 @@
 <?php
 header("Content-Type: application/json; charset=UTF-8");
-require_once ("../conn.php");
+require_once("../conn.php");
 
 $statement = "SELECT tipo_vivienda.id, tipo_vivienda_has_idioma.nombre 
 from tipo_vivienda, tipo_vivienda_has_idioma 

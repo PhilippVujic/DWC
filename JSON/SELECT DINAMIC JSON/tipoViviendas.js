@@ -13,7 +13,7 @@ $(function() {
 				}
 			}
 		};
-		xhttp.open("GET", "tipoViviendas.php", true);
+		xhttp.open("GET", "selectVendedors.php", true);
 		xhttp.send();
 	}
 	loadTipoViviendas();
