@@ -34,7 +34,7 @@ $(function () {
                     }
                 }
             };
-            xhttp.open("GET", "selectCasas.info?idVendedor=" + $("#selectVendedor option:selected").val(), true);
+            xhttp.open("GET", "selectCasas.php?idVendedor=" + $("#selectVendedor option:selected").val(), true);
             console.log($("#selectVendedor option:selected").val());
             xhttp.send();
         });

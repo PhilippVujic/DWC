@@ -8,7 +8,7 @@
 <body>
 <div class="input-group mb-3">
     <select class="custom-select" id="selectVendedor">
-        <option selected>Tipo de Casa...</option>
+        <option selected>Vendedor Vivienda...</option>
     </select>
     <select class="custom-select" id="selectCasas">
         <option selected>Tipo de Casa...</option>
